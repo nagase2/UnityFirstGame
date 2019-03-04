@@ -9,6 +9,7 @@ public class playerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Application.targetFrameRate = 60;
         // Debug.Log("hello world!");
         // rb.useGravity = false;
         //rb.AddForce(0,200,500);
