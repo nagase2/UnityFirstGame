@@ -1,8 +1,8 @@
-﻿
-
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class playerScript : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     public Rigidbody rb;
     public float forwardForce = 2000f;
@@ -35,4 +35,3 @@ public class playerScript : MonoBehaviour
         }
     }
 }
-

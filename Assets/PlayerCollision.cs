@@ -4,14 +4,13 @@ using UnityEngine;
 
 public class PlayerCollision : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public PlayerMove movement;
 
      void OnCollisionEnter(Collision collisionInfo) {
-         Debug.Log(collisionInfo.collider.name);
-        
+         if(collisionInfo.collider.name == "Obstacle")
+        {
+            Debug.Log("we hit obstacle");
+            movement.enabled = false;
+        }
     }
 }
